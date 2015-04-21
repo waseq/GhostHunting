@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left|center">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/radar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|bottom"
+        android:onClick="fire">
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/ghost_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left|center">
+
+        <Button
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:id="@+id/butt"
+            android:layout_gravity="right|bottom"
+            android:clickable="true"
+            android:enabled="true"
+            android:onClick="fire"
+            android:textStyle="bold"
+            android:background="@drawable/crosshair"
+            android:textColor="#ffff0c0b"
+            android:text="FIRE"
+            android:typeface="normal"
+            android:shadowColor="#fff7fbff"
+            android:singleLine="false"
+            android:textSize="@dimen/abc_text_size_body_1_material" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal|top" />
+
+
+</RelativeLayout>
+
